@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using EShopper.Web.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace EShopper.Web.Infrastructure
 {
@@ -8,5 +9,6 @@ namespace EShopper.Web.Infrastructure
         {
 
         }
+        public DbSet<Page> Pages { get; set; }
     }
 }
